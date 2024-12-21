@@ -43,7 +43,7 @@ export default function RootLayout ({
           enableSystem
           disableTransitionOnChange
         >
-          {process.env.NODE_ENV !== 'production' && <ViewportIndicator />}
+          {process.env.NODE_ENV === 'development' && <ViewportIndicator />}
           {children}
           <Toaster richColors />
         </ThemeProvider>

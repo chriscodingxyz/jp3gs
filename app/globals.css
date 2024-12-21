@@ -70,3 +70,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+a {
+  @apply text-blue-600  transition-all duration-300 underline hover:no-underline underline-offset-2;
+}
